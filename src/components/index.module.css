@@ -1,0 +1,94 @@
+.list {
+  display: grid;
+  margin: 0;
+  /* https://css-tricks.com/responsive-layouts-fewer-media-queries/ */
+  --w: 280px;
+  --n: 2;
+  gap: var(--size-gap);
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(max(var(--w), 100%/ (var(--n) + 1) + 0.1%), 1fr)
+  );
+  margin-bottom: var(--size-gap);
+  margin-top: var(--size-gap);
+}
+
+.listItem {
+  margin: 0;
+}
+
+.listItem::marker {
+  color: #e95800;
+}
+
+.listItem:nth-child(2)::marker {
+  color: #159bf3;
+}
+
+.listItem:nth-child(3)::marker {
+  color: #8eb814;
+}
+
+.listItem:nth-child(4)::marker {
+  color: #663399;
+}
+
+.listItemLink {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.listItemDescription {
+  color: var(--color-text);
+  margin-bottom: 0;
+  margin-top: var(--space-1);
+}
+
+.textCenter {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.intro {
+  max-width: none;
+  line-height: var(--line-height-loose);
+}
+
+.ctaContainer {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.ctaButton {
+  background: #7026b9;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+
+.ctaButton:hover {
+  background: #4b1c7a;
+}
+
+.ctaButtonSecondary {
+  background: #fff;
+  color: #7026b9;
+  border: 2px solid #7026b9;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.ctaButtonSecondary:hover {
+  background: #7026b9;
+  color: #fff;
+}

@@ -3,7 +3,9 @@
  */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "Mon Portfolio",
+    description: "Description...",
+    author: "Votre nom",
   },
   plugins: [],
-}
+};

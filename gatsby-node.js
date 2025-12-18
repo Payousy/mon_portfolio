@@ -4,19 +4,19 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
  */
 
-const path = require("path")
+const path = require("path");
 
 /**
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
 exports.createPages = async ({ actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
   createPage({
     path: "/using-dsg",
     component: require.resolve("./src/templates/using-dsg.js"),
     context: {},
     defer: true,
-  })
+  });
 
   const projets = [
     {
@@ -47,6 +47,7 @@ Un site vitrine statique de réservation de vacances, clair et fonctionnel, resp
       choix:
         "Intégration pixel perfect, responsive, accessibilité, respect de la maquette fournie.",
     },
+    // Oh My Food project
     {
       slug: "ohmyfood",
       titre: "Dynamisation d'une page web - animations CSS",
@@ -91,6 +92,8 @@ Un site vitrine moderne et interactif pour un restaurant en ligne, fidèle à la
       choix:
         "Utilisation de SASS pour la gestion des styles, animations CSS pour dynamiser l'expérience utilisateur.",
     },
+
+    // Chouette project
     {
       slug: "chouette",
       titre: "Optimisation du référencement SEO d'un site web existant",
@@ -101,6 +104,8 @@ Un site vitrine moderne et interactif pour un restaurant en ligne, fidèle à la
       choix:
         "Amélioration du référencement naturel, optimisation des balises HTML et des performances.",
     },
+
+    // Kanap project
     {
       slug: "kanap",
       titre: "Création d'un site de e-commerce (vente de canapé)",
@@ -160,6 +165,8 @@ Retrouvez le code source sur mon espace GitHub.`,
       choix:
         "Utilisation de JavaScript pour la gestion du panier, intégration d'une API pour les produits.",
     },
+
+    // Piiquate project
     {
       slug: "piiquate",
       titre:
@@ -210,7 +217,7 @@ Page création d'une sauce`,
       choix:
         "Mise en place d'une architecture sécurisée, gestion des utilisateurs et des avis.",
     },
-
+    // Groupomania project
     {
       slug: "groupomania",
       titre: "Création d'un réseau social d’entreprise",
@@ -247,13 +254,13 @@ Une fois authentifié, l'utilisateur accéde à la page d'accueil qui affiche l'
       choix:
         "Utilisation de WebSocket pour les notifications en temps réel, gestion des utilisateurs et des publications.",
     },
-  ]
+  ];
 
-  projets.forEach(projet => {
+  projets.forEach((projet) => {
     createPage({
       path: `/projets/${projet.slug}`,
       component: path.resolve("./src/templates/projet.js"),
       context: projet,
-    })
-  })
-}
+    });
+  });
+};

@@ -105,18 +105,18 @@ import Layout from "../components/layout";
 import * as styles from "../components/projets.module.css";
 import projets from "../data/projets";
 
-import reserviaImg from "../images/reservia.jpg";
-import ohmyfoodImg from "../images/ohmyfood.jpg";
-import chouetteImg from "../images/chouette.jpg";
-import kanapImg from "../images/kanap.jpg";
+import reserviaImg from "../images/Capture_Reservia.png";
+import ohmyfoodImg from "../images/homyfood.png";
+import chouetteImg from "../images/la-chouette-agence-banniere-new.jpg";
+import kanapImg from "../images/banniere-new.jpg";
 import piiquateImg from "../images/piiquate.jpg";
 import groupomaniaImg from "../images/groupomania.jpg";
 
 const images = {
-  "reservia.jpg": reserviaImg,
-  "ohmyfood.jpg": ohmyfoodImg,
-  "chouette.jpg": chouetteImg,
-  "kanap.jpg": kanapImg,
+  "Capture_Reservia.png": reserviaImg,
+  "homyfood.png": ohmyfoodImg,
+  "la-chouette-agence-banniere-new.jpg": chouetteImg,
+  "banniere-new.jpg": kanapImg,
   "piiquate.jpg": piiquateImg,
   "groupomania.jpg": groupomaniaImg,
 };

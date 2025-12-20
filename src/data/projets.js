@@ -24,7 +24,7 @@ Compétences acquises
 Résultat
 Un site vitrine statique de réservation de vacances, clair et fonctionnel, respectant la maquette fournie et offrant une première approche des standards professionnels de l’intégration web.
 `,
-    image: "reservia.jpg",
+    image: "Capture_Reservia.png",
     choix: "Intégration pixel perfect, responsive, accessibilité.",
   },
   //Ohmyfood
@@ -55,7 +55,7 @@ Résultat
 Un site vitrine moderne et interactif pour un restaurant en ligne, fidèle à la maquette initiale, offrant une navigation agréable et mettant en valeur les menus grâce à des animations fluides.
  `,
 
-    image: "ohmyfood.jpg",
+    image: "homyfood.png",
     choix: "Animations CSS, responsive design.",
   },
 
@@ -73,7 +73,7 @@ Un site vitrine moderne et interactif pour un restaurant en ligne, fidèle à la
     - JavaScript : pour améliorer l'interactivité sans nuire au SEO. 
     Analyse complète du site existant pour identifier les points faibles en termes de SEO et d'accessibilité. Optimisation du contenu : réécriture des balises méta, titres, descriptions et textes pour inclure des mots-clés pertinents. Amélioration de la structure HTML en utilisant des balises sémantiques appropriées (header, nav, main, footer, etc.). Mise en place de liens internes et externes de qualité pour renforcer l'autorité du site. Optimisation des images (attributs alt, compression) pour améliorer le temps de chargement et l'accessibilité. Tests d'accessibilité pour s'assurer que le site est utilisable par tous les utilisateurs, y compris ceux utilisant des technologies d'assistance. 
     Résultat : Un site web optimisé pour le référencement naturel, avec une meilleure visibilité sur les moteurs de recherche et une expérience utilisateur améliorée grâce à une accessibilité renforcée.`,
-    image: "chouette.jpg",
+    image: "la-chouette-agence-banniere-new.jpg",
     choix: "SEO, accessibilité, performance.",
   },
   {
@@ -132,7 +132,7 @@ Pour ce projet, j'ai utilisé le logiciel de versionning Git.
 
 Retrouvez le code source sur mon espace GitHub.`,
 
-    image: "kanap.jpg",
+    image: "banniere-new.jpg",
     choix: "E-commerce, gestion de panier, responsive.",
   },
 
